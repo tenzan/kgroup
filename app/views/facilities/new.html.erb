@@ -1,0 +1,29 @@
+<h1>New Facility</h1>
+<%= form_for(@facility) do |f| %>
+   <p>
+     <%= f.label :name %><br>
+     <%= f.text_field :name %>
+   </p>
+   <p>
+     <%= f.label :start %><br>
+     <%= f.text_field :start %>
+   </p>
+   <p>
+     <%= f.label :number_of_floors, 'Number of Floors' %><br>
+     <%= f.text_field :number_of_floors %>
+   </p>
+   <p>
+     <%= f.label :ceiling_height %><br>
+     <%= f.text_field :ceiling_height %>
+   </p>
+   <p>
+     <%= f.label :underground_garage %><br>
+     <%= f.text_field :underground_garage %>
+   </p>
+   <p>
+     <%= f.label :description %><br>
+     <%= f.text_field :description %>
+   </p>
+
+   <%= f.submit %>
+<% end %>
